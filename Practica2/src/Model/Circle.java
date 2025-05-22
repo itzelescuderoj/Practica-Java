@@ -1,26 +1,23 @@
 package Model;
 
 public class Circle {
-    private double radius;
-    private double base;
-    private double altura;
+    private final double PI = 3.1416;
 
+    private double radio;
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
 
     public double getPerimeter() {
-        return radius * 2 ;
+        return 2 * PI * radio;
     }
 
     public double getArea() {
-        return (altura * base) / 2;
+        return PI * (radio * radio);
     }
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
-    public void setBase(double base) {
-        this.base = base;
-    }
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
 }
